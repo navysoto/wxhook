@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>WeixinHook.UI</RootNamespace>
+    <AssemblyName>WeixinHook.UI</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WeixinHook.Shared\WeixinHook.Shared.csproj" />
+  </ItemGroup>
+  <Target Name="CopyNativeDll" AfterTargets="Build">
+    <PropertyGroup>
+      <_NativePublish>$(MSBuildThisFileDirectory)..\WeixinHook.Native\bin\$(Configuration)\net8.0\win-x64\publish\WeixinHook.Native.dll</_NativePublish>
+      <_NativeBuild>$(MSBuildThisFileDirectory)..\WeixinHook.Native\bin\$(Configuration)\net8.0\win-x64\native\WeixinHook.Native.dll</_NativeBuild>
+      <_NativeLegacy>$(MSBuildThisFileDirectory)..\WeixinHook.Native\bin\$(Configuration)\net8.0\win-x64\WeixinHook.Native.dll</_NativeLegacy>
+      <_NativeSource Condition="Exists('$(_NativePublish)')">$(_NativePublish)</_NativeSource>
+      <_NativeSource Condition="'$(_NativeSource)'=='' and Exists('$(_NativeBuild)')">$(_NativeBuild)</_NativeSource>
+      <_NativeSource Condition="'$(_NativeSource)'=='' and Exists('$(_NativeLegacy)')">$(_NativeLegacy)</_NativeSource>
+    </PropertyGroup>
+    <Warning Code="NativeDllMissing" Condition="'$(_NativeSource)'==''" Text="未找到 NativeAOT 产物，请先: dotnet publish ..\WeixinHook.Native -c Release -r win-x64" />
+    <Copy SourceFiles="$(_NativeSource)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="false" Condition="'$(_NativeSource)'!=''" />
+    <Message Importance="High" Condition="'$(_NativeSource)'!=''" Text="Copied Native DLL from $(_NativeSource)" />
+  </Target>
+</Project>

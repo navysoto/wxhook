@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WeixinHook.UI/1.0.0": {
+        "dependencies": {
+          "WeixinHook.Shared": "1.0.0"
+        },
+        "runtime": {
+          "WeixinHook.UI.dll": {}
+        }
+      },
+      "WeixinHook.Shared/1.0.0": {
+        "runtime": {
+          "WeixinHook.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WeixinHook.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WeixinHook.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

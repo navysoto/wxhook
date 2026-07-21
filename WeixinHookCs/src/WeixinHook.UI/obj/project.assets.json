@@ -1,0 +1,105 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "WeixinHook.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/WeixinHook.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WeixinHook.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WeixinHook.Shared/1.0.0": {
+      "type": "project",
+      "path": "../WeixinHook.Shared/WeixinHook.Shared.csproj",
+      "msbuildProject": "../WeixinHook.Shared/WeixinHook.Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "WeixinHook.Shared >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\75627\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Work\\Code\\Hook\\20260706\\WeixinHookCs\\src\\WeixinHook.UI\\WeixinHook.UI.csproj",
+      "projectName": "WeixinHook.UI",
+      "projectPath": "C:\\Work\\Code\\Hook\\20260706\\WeixinHookCs\\src\\WeixinHook.UI\\WeixinHook.UI.csproj",
+      "packagesPath": "C:\\Users\\75627\\.nuget\\packages\\",
+      "outputPath": "C:\\Work\\Code\\Hook\\20260706\\WeixinHookCs\\src\\WeixinHook.UI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\75627\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {
+            "C:\\Work\\Code\\Hook\\20260706\\WeixinHookCs\\src\\WeixinHook.Shared\\WeixinHook.Shared.csproj": {
+              "projectPath": "C:\\Work\\Code\\Hook\\20260706\\WeixinHookCs\\src\\WeixinHook.Shared\\WeixinHook.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>WeixinHook.Native</AssemblyName>
+    <RootNamespace>WeixinHook.Native</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PublishAot>true</PublishAot>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <StripSymbols>false</StripSymbols>
+    <NativeLib>Shared</NativeLib>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- SEH bridge: catch native AVs from WeChat calls (C# catch cannot) -->
+    <NativeLibrary Include="native\seh_bridge.lib" />
+  </ItemGroup>
+</Project>
