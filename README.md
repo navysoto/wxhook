@@ -35,6 +35,7 @@ Windows 桌面程序 Hook 技术分析与开发示例。
 | 好友 / 群聊对象 | ✅ |
 | 图形界面操作 | ✅ |
 图片、语音、表情等类型未开源
+<img width="2118" height="1041" alt="image" src="https://github.com/user-attachments/assets/59469251-e58c-44dd-88b7-9d8454b46a8d" />
 
 ---
 ## 说明
