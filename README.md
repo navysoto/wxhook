@@ -48,7 +48,7 @@ Windows 桌面程序 Hook 技术分析与开发示例。
 <img width="2246" height="1233" alt="image" src="https://github.com/user-attachments/assets/8cbff035-3a60-4e59-8bf1-f192b1574389" />
 <img width="2280" height="1332" alt="image" src="https://github.com/user-attachments/assets/e9464026-6f59-48dd-bda7-3486c60c09aa" />
 
-我的TG，需要更多功能可以联系我。
+我的TG，需要更多功能可以联系我。https://t.me/t2599em423
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/d8501e2b-2131-43da-8890-b16ae2990df5" />
 
 
