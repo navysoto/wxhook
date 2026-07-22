@@ -1,4 +1,4 @@
-# wxhook
+# wxhook，微信hook
 Windows 桌面程序 Hook 技术分析与开发示例。
 
 微信hook版本4.1.11.52，仅支持此版本。wxhook4.1X
